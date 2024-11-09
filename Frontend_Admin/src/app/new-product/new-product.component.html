@@ -1,0 +1,33 @@
+<div class="p-3">
+    <div class="card">
+     <div class="card-body">
+         <div class="row">
+            <div class="col-md-6">
+              
+                <form [formGroup]="productForm"  (ngSubmit)="saveTerrain()">
+                  
+                    <div class="mb-3">
+                        <label for="form-label">Nom</label>
+                        <input  class="form-control" formControlName="nom" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-label">Description</label>
+                        <input  class="form-control" formControlName="description" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-label">Adresse</label>
+                        <input  class="form-control" formControlName="adresse" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="form-label">Image Path</label>
+                        <input  class="form-control" formControlName="image" >
+                    </div>
+                   
+                    <button [disabled]="productForm.invalid" type="submit" class="btn btn-success">Save</button>
+                </form>
+            </div>
+         </div>
+     </div>
+    </div>
+ </div>
+ 

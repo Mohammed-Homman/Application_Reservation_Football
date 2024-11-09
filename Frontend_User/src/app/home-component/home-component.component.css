@@ -1,0 +1,30 @@
+.feature{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.feature .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 20px;
+}
+.feature .container .one{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #ffab84; /* Ajoutez cette ligne pour définir une bordure noi*/
+
+}
+.feature .container .l{
+    width: 200px;
+    margin: 10px 0px;
+}
+
+.feature .container p{
+    padding: 0px 30px;
+}
+.feature .container .one img{
+   width: 200px;
+   height: 150px;
+
+}

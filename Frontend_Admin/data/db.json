@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "MacPro",
+      "price": 7200,
+      "checked": false
+    },
+    {
+      "id": "2",
+      "name": "iphone",
+      "price": 3300,
+      "checked": false
+    },
+    {
+      "id": "3",
+      "name": "HP ecran",
+      "price": 1200,
+      "checked": true
+    },
+    {
+      "id": "e296",
+      "name": "Producr Smart",
+      "price": "1000",
+      "checked": true
+    },
+    {
+      "id": "4529",
+      "name": "cc",
+      "price": "100",
+      "checked": true
+    }
+  ]
+}

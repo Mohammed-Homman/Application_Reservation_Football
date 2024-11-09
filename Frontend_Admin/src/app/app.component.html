@@ -1,0 +1,29 @@
+<nav class="p-3">
+    <ul class="nav nav-pills">
+       <!-- #region  <li>
+            <button routerLink="/home" class="btn btn-outline-success ms-1">Home <i class="bi bi-house text-success"></i></button>
+            
+        </li>
+        <li>
+            <button routerLink="/products" class="btn btn-outline-success ms-1">Products  <i class="bi bi-arrow-down-up text-success"></i></button>
+           
+        </li>
+        <li>
+            <button routerLink="/new-product" class="btn btn-outline-success ms-1">New Products <i class="bi bi-plus-circle text-success"></i></button>
+        
+        </li>-->
+        <!-- We can't do it better by using boucle because we can see that we write the same code 3 times   -->
+ 
+    <li *ngFor="let a of actions">
+            <button 
+            (click)="setCurrentAction(a)" 
+            routerLink="{{a.route}}"
+            [class]="a==currentAction ? 'btn btn-success ms-1' : 'btn btn-outline-success ms-1'">{{a.title}} <i class="{{a.icon}}"></i></button>
+
+        </li>
+    </ul>
+</nav>
+
+<router-outlet>
+  
+</router-outlet>

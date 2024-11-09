@@ -1,0 +1,10 @@
+FROM openjdk:17-jdk-slim
+  
+WORKDIR /app
+  
+  
+COPY target/reservation_backend.jar /app/reservation_backend.jar
+  
+EXPOSE 8080
+  
+CMD ["java", "-jar", "/app/reservation_backend.jar"]

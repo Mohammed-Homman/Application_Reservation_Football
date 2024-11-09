@@ -1,0 +1,33 @@
+<div class="p-3">
+    <div class="card">
+     <div class="card-body">
+       <div class="card-body">
+        <!-- #region il se trouve reactiveFOrms & FormsModule dans ce cas on va faire FormsModule
+        <input type="text" [(ngModel)]="keyword" > {{keyword}}
+        <button (click)="searchProduct()" class="btn btn-outline-success">Search <i class="bi bi-search"></i></button>
+     -->
+           </div>
+       <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th> <th>Date</th>   <th>Heure</th>  <th>Terrain</th> <th> Utilisateur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of reservations">
+                <td>{{p.id_reservation}}</td>
+                <td>{{p.dateReservation}}</td>
+                <td>{{p.heure_reservation}}</td>
+                <td>{{p.terrain.nom}}</td>
+                <td>{{p.utilisateur.nom}}</td>
+               
+                <td>
+                    <button (click)="deleteReservation(p)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+       </table>
+     </div>
+    </div>
+ </div>
+ 
